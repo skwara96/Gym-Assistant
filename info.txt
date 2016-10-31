@@ -1,0 +1,8 @@
+Zadanie nr 21
+https://psdrepo.com/free-psd/gym-assistant-freebie/
+mile widziany animowany wykres lub cokolwiek, co by wskazywało na to, że to nie jest obrazek :) interpretacja wyglądu menu po kliknięciu dowolna
+1. start 14.10
+2. html/css/js (w tym jquery)
+3. rwd obowiązkowo
+4. przydatne pojęcia: spline area chart jquery, bar chart jquery
+Powodzenia! Cały czas możecie umieszczać rozwiązania poprzednich zadań
