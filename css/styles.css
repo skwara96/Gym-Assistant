@@ -2,6 +2,10 @@ body {
     background: url('../img/bg.jpg')  no-repeat center center fixed;
     background-size: cover;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fffdd9;
+    letter-spacing: 0.1em;
+     font-size: 14px;
 }
 
 /* CLEARFIX METHOD */
@@ -12,6 +16,11 @@ body {
 }
 .clearfix:after {
     clear: both;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 /********** Grid System **********/
@@ -68,18 +77,25 @@ body {
     width: 100%;
 }
 
+.push-1-12 {
+    margin-left: 8.33%;
+}
+
 
 /********** Menu **********/
 
 .menu-sidebar {
     background: rgba(0,0,0,0.6);
     top:0; left:0; right:0; bottom:0;
-    position: absolute;
+    position: fixed;
     padding-top: 64px;
-    color: white;
+    color: #dce3dd;
     overflow: hidden;
     -webkit-transition: .25s ease-in-out;
     transition: 0.25s ease-in-out;
+     font-weight: 300;
+    text-transform: uppercase;
+    line-height: 3em;
 }
 
 .menu-sidebar.active {
@@ -88,14 +104,14 @@ body {
 .hamburger-icon {
     width: 20px;
     height: 14px;
-    margin: 0 auto 33px;
+    margin: 0 auto 23px;
     position: relative;
 }
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background: white;
+    background: #dce3dd;
     position: absolute;
     opacity: 1;
     -webkit-transition: .25s ease-in-out;
@@ -151,12 +167,13 @@ body {
     text-align: center;
     -webkit-transition: .25s ease-in-out;
     transition: 0.25s ease-in-out;
+
 }
 
 .menu-list.active {
     left: 0;
     opacity: 1;
-    width: 100%;
+    min-width: 100%;
 }
 
 .menu-title.active {
@@ -169,6 +186,61 @@ body {
     list-style-type: none;
 }
 
-.menu-list ul li .fa {
-    width: 100%;
+.menu-list ul li a {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.menu-list ul li a.active {
+    color: #e9ac8f;
+}
+
+.menu-list ul li a:before, .menu-list ul li a:after {
+    width: 0%;
+    height: 1px;
+    background: white;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.menu-list ul li a.active:before, .menu-list ul li a.active:after {
+    width: 80%;
+    background: #e9ac8f;
+}
+
+/********** Avatar Area **********/
+
+.avatar-area {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.avatar-area h2 {
+    color: #e9ac8f;
+    max-width: 65%;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 38px auto 26px;
+}
+
+.avatar-area p {
+    max-width: 65%;
+    margin: 0 auto;
+    line-height: 29px;
+}
+
+.avatar-icons img {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    opacity: 0.28;
+    margin: 40px 16px 0;
+}
+
+.avatar-icons img:hover {
+
 }

@@ -1,8 +1,13 @@
 $(document).ready(function(){
-    $('.hamburger-icon').click(function(){
-        $(this).toggleClass('active');
-         $('.menu-list').toggleClass('active');
-         $('.menu-title').toggleClass('active');
-        //$('.menu-sidebar').toggleClass('active');
+    $('.hamburger-icon, .menu-title').click(function(){
+         $('.menu-list, .menu-title, .hamburger-icon').toggleClass('active');
     });
+
+    $('a').hover(function(){
+         $(this).toggleClass('active');
+    });
+
+   $('.svg-inject').svgInject(function() {
+                console.log('SVG inject complete')
+            });
 });
