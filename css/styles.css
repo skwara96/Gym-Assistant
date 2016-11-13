@@ -233,7 +233,7 @@ a:link, a:visited {
     line-height: 29px;
 }
 
-.avatar-icons svg {
+.avatar-icons svg, .avatar-icons img {
     width: 28px;
     height: 28px;
     fill: white;
