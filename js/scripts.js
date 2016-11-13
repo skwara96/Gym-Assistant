@@ -20,6 +20,7 @@ $(function () {
             margin: [100, -50, 0, -50]
         },
         colors: ['#faa28e', '#ffcda3'],
+        minorGridLineWidth: 0,
         title: {
             text: null
         },
@@ -49,19 +50,25 @@ $(function () {
                 text: null
             },
             labels: {
-                x: 100,
+                zIndex: 2,
+                x: 150,
+                step: 2,
                 formatter: function () {
-                    return this.value / 1000 + 'k';
+                    return this.value ;
                 }
             }
         },
         tooltip: {
+
             pointFormat: '{series.name} produced <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
         },
         plotOptions: {
-            area: {
-                pointStart: 1940,
-                marker: {
+            series: {
+                 lineWidth: 0
+            },
+            areaspline: {
+
+               marker: {
                     enabled: false,
                     symbol: 'circle',
                     radius: 2,
