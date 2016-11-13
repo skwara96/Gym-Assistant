@@ -16,8 +16,10 @@ $(function () {
         chart: {
             type: 'areaspline',
             backgroundColor: 'rgba(0,0,0,0)',
-            spacing: [0,0,0,0]
+            spacing: [0,0,0,0],
+            margin: [100, -50, 0, -50]
         },
+        colors: ['#faa28e', '#ffcda3'],
         title: {
             text: null
         },
@@ -31,6 +33,8 @@ $(function () {
             enabled: false
         },
         xAxis: {
+            lineColor: 'transparent',
+            tickColor: 'transparent',
             allowDecimals: false,
             labels: {
                  enabled: false,
