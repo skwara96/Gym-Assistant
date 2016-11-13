@@ -233,14 +233,17 @@ a:link, a:visited {
     line-height: 29px;
 }
 
-.avatar-icons img {
+.avatar-icons svg {
     width: 28px;
     height: 28px;
     fill: white;
     opacity: 0.28;
     margin: 40px 16px 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.avatar-icons img:hover {
-
+.avatar-icons svg:hover {
+    fill: #e9ac8f;
+    opacity: 1;
 }
